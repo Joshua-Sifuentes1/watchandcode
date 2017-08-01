@@ -62,5 +62,15 @@ var handlers = {
 	},
 	toggleAll: function() {
 		todoList.toggleAll();
+	},
+	addTodo: function() {
+		var addTodoTextInput = document.getElementById('addTodoTextInput');
+		if (addTodoTextInput.value == '') {
+			console.log('Please enter valid name.')
+		} else {
+			todoList.addTodo(addTodoTextInput.value);
+		}
+		addTodoTextInput.value = '';
 	}
 };
+
