@@ -1,6 +1,6 @@
 var todoList = {
 	todos: [], // 'property': 'value', 
-	displayTodos: function() { // method: a function stored on an object property is a method. 'property': 'method'
+	displayTodos: function() { // method: a function stored on an object property is a method. 'property': 'method'	
 		if (this.todos.length === 0) {
 			console.log('Your todo list is empty!');	
 		} else {
@@ -65,6 +65,4 @@ displayTodosButton.addEventListener('click', function() {
 
 toggleAllButton.addEventListener('click', function() {
 	todoList.toggleAll();
-})
-
-
+});
