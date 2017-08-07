@@ -94,13 +94,14 @@ var view = {
 			}
 
 			todoLi.textContent = todoTextWithCompletion;
+			todoLi.appendChild(this.createDeleteButton());
 			todosUl.appendChild(todoLi);
 		}
 	},
 	createDeleteButton: function() {
 		var deleteButton = document.createElement('button');
 		deleteButton.textContent = 'Delete';
-		deleteButton.className = 'deleteButton';
+		deleteButton.className = 'deleteButton btn btn-danger';
 		return deleteButton;
 	}
 };
